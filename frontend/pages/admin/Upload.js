@@ -9,7 +9,6 @@ function Upload() {
     const handleClick = async (e) => {
         e.preventDefault()
         console.log(file)
-<<<<<<< HEAD
         setUploading(true)
         try {
             let token = localStorage.getItem("pepcoding_token");
@@ -39,8 +38,6 @@ function Upload() {
         } catch (err) {
             console.log("Error" + err);
         }
-=======
->>>>>>> 7d451e89c843e018bd1a0cd2891c9fb0e5dc82ea
     }
     return (
         <>

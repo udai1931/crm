@@ -3,7 +3,6 @@ import '../styles/globals.css'
 import "../styles/index.css"
 import { RecoilRoot, useRecoilState } from 'recoil'
 import { useEffect } from "react";
-import 'tailwindcss/tailwind.css'
 //
 function MyApp({ Component, pageProps }) {
   useEffect(async () => {

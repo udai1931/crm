@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
 import { useRouter } from 'next/router'
-import { useRecoilState } from "recoil";
-import { sideBarAtom } from "../../state/state";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { sideBarAtom ,ipAtom} from "../../state/state";
 import { selectedUser } from "../../state/profileState";
 
 const Content = () => {
+    const ip = useRecoilValue(ipAtom)
     const [select, setSelect] = useRecoilState(sideBarAtom)
     const [sUser, setSUser] = useRecoilState(selectedUser);
     const [departments, setDepartments] = useState([])
